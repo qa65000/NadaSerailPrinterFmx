@@ -1,0 +1,37 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'Nada Test Fmx'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object Button1: TButton
+    Position.X = 64.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 321.000000000000000000
+    Size.Height = 97.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Print '
+    OnClick = Button1Click
+  end
+  object Uni232C1: TUni232C
+    Port = 12
+    WaitTime = 100
+    BaudRate = 9600
+    ParityBits = ParityNone
+    ByteSize = Bit8
+    StopBits = Stopbit1
+    CDCVender1 = 0
+    CDCVender2 = 0
+    CDCProduct1 = 0
+    CDCProduct2 = 0
+    FlowControls = CtrlNone
+    Left = 120
+    Top = 240
+  end
+end
